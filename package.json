@@ -1,0 +1,43 @@
+{
+  "name": "nooha-official-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nooha/design-tokens": "workspace:*",
+    "@nooha/shared-types": "workspace:*",
+    "@nooha/ui": "workspace:*",
+    "@nooha/tsconfig": "workspace:*",
+    "@nooha/auth": "workspace:*",
+    "@fontsource/jetbrains-mono": "^5.0.1",
+    "@fontsource/plus-jakarta-sans": "^5.0.1",
+    "@hookform/resolvers": "^3.9.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "firebase": "^11.0.2",
+    "framer-motion": "^11.11.9",
+    "lucide-react": "^0.468.0",
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.25.0",
+    "tailwind-merge": "^2.4.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.1.1",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.15.0",
+    "eslint-config-next": "^15.3.3",
+    "postcss": "^8.4.9",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3"
+  }
+}
