@@ -1,0 +1,117 @@
+import { NavItem, ProductItem, ServiceItem } from '@nooha/shared-types';
+
+export const siteConfig = {
+  name: 'Nooha Labs',
+  codename: 'Project Atlas',
+  tagline: 'One Platform. Unlimited Possibilities.',
+  description:
+    'Nooha Labs designs and builds custom software, web platforms, mobile apps, and AI solutions for ambitious businesses, educational institutions, and startups.',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://noohalabs.com',
+  hubUrl: process.env.NEXT_PUBLIC_HUB_URL || 'http://localhost:3001',
+  email: 'hello@noohalabs.com',
+  location: 'Engineering Hub, Mombasa',
+  socials: {
+    linkedin: 'https://linkedin.com/company/noohalabs',
+    github: 'https://github.com/noohalabs',
+    twitter: 'https://twitter.com/noohalabs',
+  },
+  navigation: [
+    { href: '/', label: 'Home' },
+    { href: '/products', label: 'Products' },
+    { href: '/platform', label: 'Platform' },
+    { href: '/security', label: 'Security' },
+    { href: '/solutions', label: 'Solutions' },
+    { href: '/resources', label: 'Resources' },
+    { href: '/about', label: 'Company' },
+    { href: '/explore', label: 'Explore Nooha', badge: 'Interactive' },
+  ] as NavItem[],
+  services: [
+    {
+      id: 'product-engineering',
+      title: 'Product Engineering',
+      description: 'End-to-end design, development, and architecture for web, desktop, and mobile platforms.',
+      icon: 'Rocket',
+      features: ['Full-stack Web Apps', 'Cross-Platform Mobile', 'Cloud Infrastructure', 'API Integrations'],
+    },
+    {
+      id: 'web-experiences',
+      title: 'Web Experiences',
+      description: 'High-performance, accessible websites built with modern frameworks and optimized conversion flows.',
+      icon: 'Globe',
+      features: ['Next.js App Router', 'Tailwind CSS Systems', 'Headless CMS', 'SEO Optimization'],
+    },
+    {
+      id: 'ai-solutions',
+      title: 'AI Solutions & Automation',
+      description: 'Custom AI copilots, intelligent workflows, and automated domain logic tailored to your operation.',
+      icon: 'Sparkles',
+      features: ['Custom LLM Workflows', 'Smart Data Processing', 'Domain Copilots', 'Process Automation'],
+    },
+    {
+      id: 'cloud-support',
+      title: 'Cloud Infrastructure & Support',
+      description: 'Reliable deployment, continuous monitoring, and dedicated operational support.',
+      icon: 'ShieldCheck',
+      features: ['Firebase & GCP Cloud', 'CI/CD Pipelines', 'Security Hardening', 'Ongoing Maintenance'],
+    },
+  ] as ServiceItem[],
+  products: [
+    {
+      id: 'nooha-erp',
+      title: 'Nooha ERP',
+      subtitle: 'Modern portal for educational institutions',
+      description: 'Comprehensive platform for student records, fee tracking, grade reporting, and parent communication.',
+      category: 'Education',
+      badge: 'Flagship',
+      features: ['Student & Staff Portals', 'Automated Grading & Reports', 'Fee Invoicing & Payments', 'Parent Communication SMS'],
+      href: '/products#erp',
+    },
+    {
+      id: 'rental-management-system',
+      title: 'Nooha Rental',
+      subtitle: 'Asset & equipment logistics for construction',
+      description: 'Streamlined inventory control, rental contracts, site delivery tracking, and invoicing.',
+      category: 'Construction & Logistics',
+      badge: 'Featured',
+      features: ['Live Equipment Tracking', 'Lease & Rental Agreements', 'Automated Maintenance Logs', 'Financial Analytics'],
+      href: '/products#rental',
+    },
+    {
+      id: 'nooha-ai',
+      title: 'Nooha AI Assistant',
+      subtitle: 'Intelligent business automation copilot',
+      description: 'Context-aware AI system integrated directly into operational workflows.',
+      category: 'Artificial Intelligence',
+      badge: 'Beta',
+      features: ['Natural Language Insights', 'Document Processing', 'Automated Customer Replies', 'Data Analytics'],
+      href: '/products#ai',
+    },
+  ] as ProductItem[],
+  process: [
+    {
+      step: '01',
+      title: 'Understand',
+      description: 'We learn how the organization works, mapping real users, real workflows, and operational constraints.',
+    },
+    {
+      step: '02',
+      title: 'Design',
+      description: 'We turn domain requirements into clear, intuitive digital experiences and scalable architecture.',
+    },
+    {
+      step: '03',
+      title: 'Build',
+      description: 'We develop secure, high-performance systems backed by modular logic and robust security protocols.',
+    },
+    {
+      step: '04',
+      title: 'Deploy',
+      description: 'We guide the transition into real-world operation, ensuring seamless integration and data integrity.',
+    },
+    {
+      step: '05',
+      title: 'Improve',
+      description: 'We continue refining the platform as institutional needs evolve, driven by data and user feedback.',
+    },
+  ],
+};
